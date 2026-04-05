@@ -1,39 +1,53 @@
 [
   {
-    "title": "Hamsters Dancing",
-    "description": "Adds a couple of dancing hamsters on the playback bar",
-    "code": ".player-controls .playback-progressbar { position: relative; } .player-controls .playback-progressbar::before { content: ''; width: 80px; height: 80px; bottom: calc(100% - 20px); left: 0; position: absolute; background-size: 80px 80px; background-image: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXk2NW15cTJrdjF0YjZ5eTBjODE0M2l3ejg3bDlvYWh5NmVub2l0eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/s7pdNRdwG1zxdwkazY/giphy.gif'); pointer-events: none; z-index: 0; } .player-controls .playback-progressbar::after { content: ''; width: 80px; height: 80px; bottom: calc(100% - 23px); right: 0; position: absolute; background-size: 80px 80px; background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExamN4OWxiOXY4dHZ5Mm90NjU5ZjhwcjV1dDd3dHdveHFkaGYzbGRmaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VxovskkECK4egQCltk/giphy.gif'); pointer-events: none; z-index: 0; }",
-    "preview": "resources/assets/snippets/dancing-hamster.png"
+    "típulo": "Hámsteres bailando",
+    "descripción": "Agrega un par de hassteres bailando en la barra de reproducción",
+    "código": ".player-controls .playback-progressbar { posición: relativa; } .player-controls .playback-progressbar::antes { contenido: ''; ancho: 80px; alto: 80px; bajo: calc(100% - 20px); izquierda: 0; posición: absoluta; tamaño de fondo: 80px 80px; imagen de fondo: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXk2NW15cTJrdjF0YjZ5eTBjODE0M2l3ejg3bDlvYWh5NmVub2l0eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/s7pdNRdwG1zxdwkazY/giphy.gif'); eventos de jugador: ninguno; índice z: 0; } .player-controls .playback-progressbar::después de { contenido: ''; ancho: 80px; alto: 80px; bajo: calc(100% - 23px); derecha: 0; posición: absoluta; tamaño de fondo: 80px 80px; imagen de fondo: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExamN4OWxiOXY4dHZ5Mm90NjU5ZjhwcjV1dDd3dHdveHFkaGYzbGRmaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VxovskkECK4egQCltk/giphy.gif'); eventos de puntero: ninguno; índice z: 0; }",
+    "vista previa": "recursos/activos/fragmentos/dancing-hamster.png"
   },
   {
-    "title": "Sonic Dancing",
-    "description": "You get sonic dancing on your playback bar!",
-    "code": ".player-controls .playback-progressbar::before { content: ''; width: 32px; height: 32px; bottom: calc(100% - 7px); right: 10px; position: absolute; image-rendering: pixelated; background-size: 32px 32px; background-image: url('https://media.tenor.com/pWqGD2PHY3kAAAAj/fortnite-dance-sonic.gif'); }",
-    "preview": "resources/assets/snippets/sonic-dancing.png"
+ .controladores del jugador .barra de progreso de reproducción::antes {
+ contenido: '';
+ ancho: 32px;
+ alta: 32px;
+ bajo: calc(100% - 7px);
+ corect: 10px;
+ posición: absoluta;
+
+ /* opcional quitar si no quieres estilo pixel */
+ renderizado de imágenes: automático;
+
+ tamaño de fondo: 32px 32px;
+ repetición en segundo plano: sin repetición;
+
+ imagen de fondo: url('https://media.tenor.com/XLprFoJLe6kAAAAi/lain-serial-experiments-lain.gif');
+}
+
+
   },
   {
-    "title": "Remove Playlist Album Cover",
-    "description": "Remove the album cover from the playlist banner",
-    "code": ".main-entityHeader-imageContainer.main-entityHeader-imageContainerNew { display: none; }",
-    "preview": "resources/assets/snippets/Remove-Playlist-Cover.png"
+    "típulo": "Eliminar la portada del álbum de la lista de reproducción",
+    "descripción": "Eliminar la portada del álbum del banner de la lista de reproducción",
+    "código": ".main-entityHeader-imageContainer.main-entityHeader-imageContainerNew { visualización: ninguna; }",
+    "vista previa": "recursos/activos/fragmentos/Eliminar-Playlist-Cover.png"
   },
   {
-    "title": "Rounded 'Now Playing' Bar",
-    "description": "Adds rounded corners to the 'Now Playing' bar so it matches the rest of the User Interface.",
-    "code": ":root{ --border-radius-1: 8px; } .Root__now-playing-bar, .Root__now-playing-bar footer { border-radius: var(--border-radius-1) !important; }",
-    "preview": "resources/assets/snippets/rounded-now-playing.png"
+    "típulo": "Barra redondeada 'Ahora en reproducción'",
+    "descripción": "Agrega esquinas redondeadas a la barra 'Reproduciendo ahora' para que coincida con el resto de la interfaz de usuario",
+    "código": ":root{ --border-radius-1: 8px; } .Barra de juego Root__now, .Pie de página de la barra de juego Root__now { border-radius: var(--border-radius-1) !importante; }",
+    "vista previa": "recursos/activos/fragmentos/redondeado-ahora-jugando.png"
   },
   {
-    "title": "Rounded Images",
-    "description": "Adds rounded corners to the cover art, playlist covers, cards and other images",
-    "code": "/* Expanded Cover Art Image (+ position fix) */\n .main-navBar-navBar > :nth-child(3) {\n margin: 0 0 0 1px;\n border-radius: 6px;\n }\n \n /* Collapsed Cover Art Image */\n .cover-art-image,\n .artist-artistOverview-sideBlock > div > section > div:nth-child(3) > section:nth-child(2) > div > img,\n .view-homeShortcutsGrid-image {\n border-radius: 4px;\n }\n \n /*\n Playlist Header\n Search Category Card Image\n List Cards\n Local Files Card\n Placeholder Profile Card\n Artist Overview Side Block\n */\n .main-entityHeader-shadow,\n .x-categoryCard-image,\n .x-entityImage-circle, \n .main-image-image, \n .kwzBRpFigKr1EP2d5qle, \n .lKuMkIKSZanMIK6aQWfx, \n .main-cardImage-image,\n .main-cardImage-imageWrapper,\n .main-entityHeader-imagePlaceholder > div,\n .artist-artistOverview-sideBlock > div > section {\n border-radius: 6px;\n }\n \n /* Circled Artist + Profile Cards (force) */\n .main-cardImage-circular,\n .main-entityHeader-imagePlaceholder,\n .main-entityHeader-circle {\n border-radius: 50% !important;\n }\n \n /* Track List Image */\n .main-trackList-rowImage {\n border-radius: 3px;\n }\n \n /* Home Shortcuts Grid (force) */\n .view-homeShortcutsGrid-image,\n .view-homeShortcutsGrid-imageWrapper {\n border-radius: 4px !important;\n }\n \n /* Artist, Liked songs heart (force) */\n .T_JcGdJujSuj014SZfjl {\n border-radius: 20% !important;\n }",
-    "preview": "resources/assets/snippets/rounded-images.png"
-  },
+    "típulo": „Imágenes redondeadas",
+    "descripción": "Agrega esquinas redespeadas a la portada, portadas de listas de reproducción, tareas y otras imágenes",
+    "código": "/* Imagen de portada expandida (+ corrección de posición) */\n .main-navBar-navBar > :nth-child(3) {\n marca: 0 0 0 1px;\n radio del borde: 6px;\n }\n \n /* Imagen de portada colapsada */\n .cover-art-image,\n .artist-artistOverview-sideBlock > div > sección > div:nth-child(3) > sección:nth-child(2) > div > img,\n .view-homeShortcutsGrid-image {\n border-radius: 4px;\n }\n \n /*\n Encabezado de lista de reproducción\n Buscar imagen de tarjeta de categoría\n Lista de tarjetas\n Tarjeta de archivos locales\n Tarjeta de perfil de marcador de posición\n Descripción general del artista Bloque lateral\n */\n .main-entityHeader-shadow,\n .x-categoryCard-image,\n .x-entityImage-circle, \n .main-image-image, \n .kwzBRpFigKr1EP2d5qle, \n .lKuMkIKSZanMIK6aQWfx, \n .main-cardImage-image,\n .main-cardImage-imageWrapper,\n .main-entityHeader-imagePlaceholder > div,\n .artista-artistaOverview-sideBlock > div > sección {\n radio de borde: 6px;\n }\n \n /* Tarjetas de perfil + artista en círculo (fuerza) */\n .main-cardImage-circular,\n .main-entityHeader-imagePlaceholder,\n .main-entityHeader-circle {\n radio de borde: 50% !importante;\n }\n \n /* Imagen de lista de pistas */\n .main-trackList-rowImage {\n border-radius: 3px;\n }\n \n /* Home Shortcuts Grid (fuerza) */\n .view-homeShortcutsGrid-image,\n .view-homeShortcutsGrid-imageWrapper {\n border-radius: 4px !importante;\n }\n \n /* Artista, Canciones que me gustaron corazón (fuerza) */\n .T_JcGdJujSuj014SZfjl {\n radio de borde: 20% !importante;\n}",
+ "vista previa": "recursos/activos/fragmentos/imágenes redesdeadas.png""vista previa": "recursos/activos/fragmentos/imágenes redesdeadas.png"
+ },},
   {
-    "title": "Fix 'Episodes' Icon",
-    "description": "Makes the 'Your Episodes' button icon monochromatic like the rest of the icons.",
-    "code": ".main-yourEpisodesButton-yourEpisodesIcon { background: var(--spice-text); color: var(--spice-sidebar); }",
-    "preview": "resources/assets/snippets/fixed-episodes-icon.png"
+ "típulo": "Corregir el icono de 'Episodios'","típulo": "Corregir el icono de 'Episodios'",
+ "descripción": "Hace que el icono del botón 'Tus episodios' sea monocromático como el resto de los iconos""descripción": "Hace que el icono del botón 'Tus episodios' sea monocromático como el resto de los iconos",
+ "código": ".main-yourEpisodesButton-yourEpisodesIcon { fondo: var(--spice-text); color: var(--spice-sidebar); }","código": ".main-yourEpisodesButton-yourEpisodesIcon { fondo: var(--spice-text); color: var(--spice-sidebar); }",
+ "vista previa": "recursos/activos/fragmentos/ícono de episodios fijos.png""vista previa": "recursos/activos/fragmentos/ícono de episodios fijos.png"
   },
   {
     "title": "Fix 'Liked' Icon",

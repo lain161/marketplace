@@ -1,63 +1,65 @@
 [
   {
-    "title": "Hamsters Dancing",
-    "description": "Adds a couple of dancing hamsters on the playback bar",
-    "code": ".player-controls .playback-progressbar { position: relative; } .player-controls .playback-progressbar::before { content: ''; width: 80px; height: 80px; bottom: calc(100% - 20px); left: 0; position: absolute; background-size: 80px 80px; background-image: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXk2NW15cTJrdjF0YjZ5eTBjODE0M2l3ejg3bDlvYWh5NmVub2l0eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/s7pdNRdwG1zxdwkazY/giphy.gif'); pointer-events: none; z-index: 0; } .player-controls .playback-progressbar::after { content: ''; width: 80px; height: 80px; bottom: calc(100% - 23px); right: 0; position: absolute; background-size: 80px 80px; background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExamN4OWxiOXY4dHZ5Mm90NjU5ZjhwcjV1dDd3dHdveHFkaGYzbGRmaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VxovskkECK4egQCltk/giphy.gif'); pointer-events: none; z-index: 0; }",
-    "preview": "resources/assets/snippets/dancing-hamster.png"
+    "típulo": "Hámsteres bailando",
+    "descripción": "Agrega un par de hassteres bailando en la barra de reproducción",
+    "código": ".player-controls .playback-progressbar { posición: relativa; } .player-controls .playback-progressbar::antes { contenido: ''; ancho: 80px; alto: 80px; bajo: calc(100% - 20px); izquierda: 0; posición: absoluta; tamaño de fondo: 80px 80px; imagen de fondo: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXk2NW15cTJrdjF0YjZ5eTBjODE0M2l3ejg3bDlvYWh5NmVub2l0eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/s7pdNRdwG1zxdwkazY/giphy.gif'); eventos de jugador: ninguno; índice z: 0; } .player-controls .playback-progressbar::después de { contenido: ''; ancho: 80px; alto: 80px; bajo: calc(100% - 23px); derecha: 0; posición: absoluta; tamaño de fondo: 80px 80px; imagen de fondo: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExamN4OWxiOXY4dHZ5Mm90NjU5ZjhwcjV1dDd3dHdveHFkaGYzbGRmaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VxovskkECK4egQCltk/giphy.gif'); eventos de puntero: ninguno; índice z: 0; }",
+    "vista previa": "recursos/activos/fragmentos/dancing-hamster.png"
   },
   {
-    "title": "Sonic Dancing",
-    "description": "You get sonic dancing on your playback bar!",
-    "code": ".player-controls .playback-progressbar::before { content: ''; width: 32px; height: 32px; bottom: calc(100% - 7px); right: 10px; position: absolute; image-rendering: pixelated; background-size: 32px 32px; background-image: url('https://media.tenor.com/pWqGD2PHY3kAAAAj/fortnite-dance-sonic.gif'); }",
-    "preview": "resources/assets/snippets/sonic-dancing.png"
+    "típulo": „Baile sonic",
+    "descripción": "¡Disfrutas de un baile sonoro en tu barra de reproducción!",
+    "código": ".player-controls .playback-progressbar::before { contenido: ''; ancho: 32px; alto: 32px; bajo: calc(100% - 7px); derecha: 10px; posición: absoluta; representación de imágenes: pixelada; tamaño de fondo: 32px 32px; imagen de fondo: https://tenor.com/es/view/lain-serial-experiments-lain-dancing-dance-party-gif-6681770741576989609; }",
+    "vista previa": "recursos/activos/fragmentos/sonic-dancing.png"+
+
+  
   },
   {
-    "title": "Remove Playlist Album Cover",
-    "description": "Remove the album cover from the playlist banner",
-    "code": ".main-entityHeader-imageContainer.main-entityHeader-imageContainerNew { display: none; }",
-    "preview": "resources/assets/snippets/Remove-Playlist-Cover.png"
+    "típulo": "Eliminar la portada del álbum de la lista de reproducción",
+    "descripción": "Eliminar la portada del álbum del banner de la lista de reproducción",
+    "código": ".main-entityHeader-imageContainer.main-entityHeader-imageContainerNew { visualización: ninguna; }",
+    "vista previa": "recursos/activos/fragmentos/Eliminar-Playlist-Cover.png"
   },
   {
-    "title": "Rounded 'Now Playing' Bar",
-    "description": "Adds rounded corners to the 'Now Playing' bar so it matches the rest of the User Interface.",
-    "code": ":root{ --border-radius-1: 8px; } .Root__now-playing-bar, .Root__now-playing-bar footer { border-radius: var(--border-radius-1) !important; }",
-    "preview": "resources/assets/snippets/rounded-now-playing.png"
+    "típulo": "Barra redondeada 'Ahora en reproducción'",
+    "descripción": "Agrega esquinas redondeadas a la barra 'Reproduciendo ahora' para que coincida con el resto de la interfaz de usuario",
+    "código": ":root{ --border-radius-1: 8px; } .Barra de juego Root__now, .Pie de página de la barra de juego Root__now { border-radius: var(--border-radius-1) !importante; }",
+    "vista previa": "recursos/activos/fragmentos/redondeado-ahora-jugando.png"
   },
   {
-    "title": "Rounded Images",
-    "description": "Adds rounded corners to the cover art, playlist covers, cards and other images",
-    "code": "/* Expanded Cover Art Image (+ position fix) */\n .main-navBar-navBar > :nth-child(3) {\n margin: 0 0 0 1px;\n border-radius: 6px;\n }\n \n /* Collapsed Cover Art Image */\n .cover-art-image,\n .artist-artistOverview-sideBlock > div > section > div:nth-child(3) > section:nth-child(2) > div > img,\n .view-homeShortcutsGrid-image {\n border-radius: 4px;\n }\n \n /*\n Playlist Header\n Search Category Card Image\n List Cards\n Local Files Card\n Placeholder Profile Card\n Artist Overview Side Block\n */\n .main-entityHeader-shadow,\n .x-categoryCard-image,\n .x-entityImage-circle, \n .main-image-image, \n .kwzBRpFigKr1EP2d5qle, \n .lKuMkIKSZanMIK6aQWfx, \n .main-cardImage-image,\n .main-cardImage-imageWrapper,\n .main-entityHeader-imagePlaceholder > div,\n .artist-artistOverview-sideBlock > div > section {\n border-radius: 6px;\n }\n \n /* Circled Artist + Profile Cards (force) */\n .main-cardImage-circular,\n .main-entityHeader-imagePlaceholder,\n .main-entityHeader-circle {\n border-radius: 50% !important;\n }\n \n /* Track List Image */\n .main-trackList-rowImage {\n border-radius: 3px;\n }\n \n /* Home Shortcuts Grid (force) */\n .view-homeShortcutsGrid-image,\n .view-homeShortcutsGrid-imageWrapper {\n border-radius: 4px !important;\n }\n \n /* Artist, Liked songs heart (force) */\n .T_JcGdJujSuj014SZfjl {\n border-radius: 20% !important;\n }",
-    "preview": "resources/assets/snippets/rounded-images.png"
+    "típulo": „Imágenes redondeadas",
+    "descripción": "Agrega esquinas redespeadas a la portada, portadas de listas de reproducción, tareas y otras imágenes",
+    "código": "/* Imagen de portada expandida (+ corrección de posición) */\n .main-navBar-navBar > :nth-child(3) {\n marca: 0 0 0 1px;\n radio del borde: 6px;\n }\n \n /* Imagen de portada colapsada */\n .cover-art-image,\n .artist-artistOverview-sideBlock > div > sección > div:nth-child(3) > sección:nth-child(2) > div > img,\n .view-homeShortcutsGrid-image {\n border-radius: 4px;\n }\n \n /*\n Encabezado de lista de reproducción\n Buscar imagen de tarjeta de categoría\n Lista de tarjetas\n Tarjeta de archivos locales\n Tarjeta de perfil de marcador de posición\n Descripción general del artista Bloque lateral\n */\n .main-entityHeader-shadow,\n .x-categoryCard-image,\n .x-entityImage-circle, \n .main-image-image, \n .kwzBRpFigKr1EP2d5qle, \n .lKuMkIKSZanMIK6aQWfx, \n .main-cardImage-image,\n .main-cardImage-imageWrapper,\n .main-entityHeader-imagePlaceholder > div,\n .artista-artistaOverview-sideBlock > div > sección {\n radio de borde: 6px;\n }\n \n /* Tarjetas de perfil + artista en círculo (fuerza) */\n .main-cardImage-circular,\n .main-entityHeader-imagePlaceholder,\n .main-entityHeader-circle {\n radio de borde: 50% !importante;\n }\n \n /* Imagen de lista de pistas */\n .main-trackList-rowImage {\n border-radius: 3px;\n }\n \n /* Home Shortcuts Grid (fuerza) */\n .view-homeShortcutsGrid-image,\n .view-homeShortcutsGrid-imageWrapper {\n border-radius: 4px !importante;\n }\n \n /* Artista, Canciones que me gustaron corazón (fuerza) */\n .T_JcGdJujSuj014SZfjl {\n radio de borde: 20% !importante;\n}",
+    "vista previa": "recursos/activos/fragmentos/imágenes redesdeadas.png"
   },
   {
-    "title": "Fix 'Episodes' Icon",
-    "description": "Makes the 'Your Episodes' button icon monochromatic like the rest of the icons.",
-    "code": ".main-yourEpisodesButton-yourEpisodesIcon { background: var(--spice-text); color: var(--spice-sidebar); }",
-    "preview": "resources/assets/snippets/fixed-episodes-icon.png"
+    "típulo": "Corregir el icono de 'Episodios'",
+    "descripción": "Hace que el icono del botón 'Tus episodios' sea monocromático como el resto de los iconos",
+    "código": ".main-yourEpisodesButton-yourEpisodesIcon { fondo: var(--spice-text); color: var(--spice-sidebar); }",
+    "vista previa": "recursos/activos/fragmentos/ícono de episodios fijos.png"
   },
   {
-    "title": "Fix 'Liked' Icon",
-    "description": "Fix the colours of the Liked icon in sidebar",
-    "code": ".main-likedSongsButton-likedSongsIcon {\n  color: var(--spice-sidebar);\n  background: var(--spice-text);\n}",
-    "preview": "resources/assets/snippets/fix-liked-icon.png"
+    "típulo": "Corregir el icono 'Me gusta'",
+    "descripción": "Arregla los colores del icono Me gusta en la barra lateral",
+    "código": ".main-likedSongsButton-likedSongsIcon {\n color: var(--spice-sidebar);\n fondo: var(--spice-text);\n}",
+    "vista previa": "recursos/activos/fragmentos/fix-liked-icon.png"
   },
   {
-    "title": "Fix 'DJ' Icon",
-    "description": "Makes the DJ icon match themes better",
-    "code": ".main-collectionLinkButton-icon > div { background: var(--spice-text); color: var(--spice-sidebar); }",
-    "preview": "resources/assets/snippets/fix-DJ-icon.png"
+    "típulo": "Corregir el icono 'DJ'",
+    "descripción": "Hace que el icono del DJ combine mejor con los temas",
+    "código": ".main-collectionLinkButton-icon > div { fondo: var(--spice-text); color: var(--spice-sidebar); }",
+    "vista previa": "recursos/activos/fragmentos/fix-DJ-icon.png"
   },
   {
-    "title": "Auto-hide Friends",
-    "description": "Collapse the friends activity sidebar on small screens",
-    "code": ".Root__right-sidebar {\n  transition: width 0.3s;\n}\n@media screen and (max-width: 1200px) {\n  .Root__right-sidebar {\n    width: 0;\n  }\n  .Root__right-sidebar .LayoutResizer__resize-bar {\n    display: none;\n  }\n}",
-    "preview": "resources/assets/snippets/auto-hide-friends.png"
+    "típulo": "Ocultar amigos automáticamente",
+    "descripción": "Colapsa la barra lateral de actividad de amigos en pantalones pequeñas",
+    "código": ".Root__right-sidebar {\n transición: ancho 0,3 s;\n}\n@media pantalla y (ancho máximo: 1200px) {\n .Root__right-sidebar {\n ancho: 0;\n }\n .Raíz__barra lateral derecha.LayoutResizer__resize-bar {\n pantalla: ninguna;\n }\n}",
+    "vista previa": "recursos/activos/fragmentos/auto-hide-friends.png"
   },
   {
-    "title": "Smooth Reveal Playlist Gradient",
-    "description": "Reveals the playlist gradient header gradient with a fade in effect",
-    "code": ".main-entityHeader-overlay,\n.main-actionBarBackground-background,\n.main-entityHeader-overlay,\n.main-entityHeader-backgroundColor {\n  -webkit-transition: 3s;\n}",
-    "preview": "resources/assets/snippets/smooth-playlist-reveal-gradient.png"
+    "típulo": "Gradiente de lista de reproducción de presentación suave",
+    "descripción": "Revela el degradado del encabezado de la lista de reproducción con un efecto de desarrollo",
+    "código": ".main-entityHeader-overlay,\n.main-actionBarBackground-background,\n.main-entityHeader-overlay,\n.main-entityHeader-backgroundColor {\n -webkit-transition: 3s;\n}",
+    "vista previa": "recursos/activos/fragmentos/smooth-playlist-reveal-gradient.png"
   },
   {
     "title": "Remove connect bar",
@@ -505,50 +507,50 @@
   },
   {
     "title": "Kirby Progress Bar",
-    "description": "Running Kirby on the progress bar",
-    "code": ".player-controls .playback-progressbar::before { content: ''; width: 60px; height: 50px; bottom: calc(95%); right: -5px; position: absolute; background-size: 60px 50px; background-image: url('https://i.imgur.com/HKEnzIr.gif'); }",
-    "preview": "resources/assets/snippets/kirby_progress_bar.png"
+    "descripción": "Ejecutar Kirby en la barra de progreso",
+    "código": ".player-controls .playback-progressbar::before { contenido: ''; ancho: 60px; alto: 50px; abajo: calc(95%); derecha: -5px; posición: absoluta; tamaño de fondo: 60px 50px; imagen de fondo: url('https://i.imgur.com/HKEnzIr.gif'); }",
+    "vista previa": "recursos/activos/fragmentos/kirby_progress_bar.png"
   },
   {
-    "title": "Hide 'Scroll through previews'",
-    "description": "Hides the 'Scroll through previews of tracks' button from albums/playlists",
-    "code": ".main-actionBar-exploreButton { display: none !important; }",
-    "preview": "resources/assets/snippets/hide-scroll-through-previews.png"
+    "título": "Ocultar 'Desplazarse por las vistas previas'",
+    "descripción": "Oculta el botón 'Desplazarse por las vistas previas de las pistas' de los álbumes/listas de reproducción",
+    "código": ".main-actionBar-exploreButton { pantalla: ¡ninguna!importante; }",
+    "vista previa": "recursos/activos/fragmentos/ocultar vistas previas de desplazamiento.png"
   },
   {
-    "title": "Jumping ZeroTwo",
-    "description": "Adds ZeroTwo onto your progress bar.",
-    "code": ".player-controls .playback-progressbar::before { content: ''; width: 32px; height: 32px; bottom: calc(100% - 4px); left: 10px; position: absolute; image-rendering: pixelated; background-size: 32px 32px; background-image: url('https://media.tenor.com/vuMDJNZY76sAAAAi/jumping-blushing.gif'); }",
-    "preview": "resources/assets/snippets/jumping-zerotwo.png"
+    "título": "Saltando ZeroTwo",
+    "descripción": "Agrega ZeroTwo a tu barra de progreso",
+    "código": ".player-controls .playback-progressbar::before { contenido: ''; ancho: 32px; alto: 32px; abajo: calc(100% - 4px); izquierda: 10px; posición: absoluta; representación de imágenes: pixelada; tamaño de fondo: 32px 32px; imagen de fondo: url('https://media.tenor.com/vuMDJNZY76sAAAAi/jumping-blushing.gif'); }",
+    "vista previa": "recursos/activos/fragmentos/jumping-zerotwo.png"
   },
   {
-    "title": "BMO Progressbar",
-    "description": "Adds a dancing BMO to the Progress Bar.",
-    "code": ".player-controls .playback-progressbar::before { content: ''; width: 45px; height: 45px; bottom: calc(100% - 6px); right: 10px; position: absolute; image-rendering: high-quality; background-size: 45px 45px; background-image: url('https://64.media.tumblr.com/38ff0368992c9f601ee746469f9a19c1/tumblr_mqf4asbozS1qmkil9o1_500.gif'); }",
-    "preview": "resources/assets/snippets/bmo-dancing.png"
+    "título": "Barra de progreso de BMO",
+    "descripción": "Agrega un BMO bailando al Progress Bar",
+    "código": ".player-controls .playback-progressbar::before { contenido: ''; ancho: 45px; alto: 45px; abajo: calc(100% - 6px); derecha: 10px; posición: absoluta; representación de imágenes: alta calidad; tamaño de fondo: 45px 45px; imagen de fondo: url('https://64.media.tumblr.com/38ff0368992c9f601ee746469f9a19c1/tumblr_mqf4asbozS1qmkil9o1_500.gif'); }",
+    "vista previa": "recursos/activos/fragmentos/bmo-dancing.png"
   },
   {
-    "title": "Moving Minecraft Bee",
-    "description": "Adds a Minecraft Bee to the Progress Bar which follows throughout the duration of the track.",
-    "code": ".player-controls .playback-progressbar .progress-bar::before { content: ''; width: 55px; height: 55px; bottom: calc(40%); left: var(--progress-bar-transform); position: absolute; transition: left var(--progress-bar-duration); transform: translate(-15px, 0px); image-rendering: auto; background-size: 55px 55px; background-image: url('https://i.imgur.com/1oyD6fu.gif'); }",
-    "preview": "resources/assets/snippets/minecraft-bee-snippet.gif"
+    "título": "Abeja de Minecraft en movimiento",
+    "descripción": "Agrega un Minecraft Bee a la barra de progreso que sigue durante toda la pista",
+    "código": ".player-controls .playback-progressbar .progress-bar::before { contenido: ''; ancho: 55px; alto: 55px; abajo: calc(40%); izquierda: var(--progress-bar-transform); posición: absoluta; transición: izquierda var(--progress-bar-duration); transformar: traducir(-15px, 0px); renderizado de imágenes: automático; tamaño de fondo: 55px 55px; imagen de fondo: url('https://i.imgur.com/1oyD6fu.gif'); }",
+    "vista previa": "recursos/activos/fragmentos/minecraft-bee-snippet.gif"
   },
   {
-    "title": "Remove Unused Space in Topbar",
-    "description": "Remove the unused space in topbar.",
-    "code": ".Kgjmt7IX5samBYUpbkBu, .OPsY6bKl1_FfA8jFpq1V { display: none !important; }",
-    "preview": "resources/assets/snippets/remove-unused-space.png"
+    "título": "Eliminar espacio no utilizado en la barra superior",
+    "descripción": "Elimine el espacio no utilizado en la barra superior",
+    "código": ".Kgjmt7IX5samBYUpbkBu, .OPsY6bKl1_FfA8jFpq1V { pantalla: ¡ninguna!importante; }",
+    "vista previa": "recursos/activos/fragmentos/eliminar espacio no utilizado.png"
   },
   {
-    "title": "Pill Player and Rounded UI",
-    "description": "Transforms the player into a pill with glassy effect, and rounded corners for library icons.",
-    "code": ".Root__right-sidebar .cover-art,.main-nowPlayingView-coverArtContainer .cover-art,.main-nowPlayingView-coverArtContainer div[style*=background]{background:0 0!important;border-radius:50%!important;opacity:1!important}.Root__right-sidebar .cover-art::after,.Root__right-sidebar .cover-art::before,.main-nowPlayingView-coverArtContainer .cover-art::after,.main-nowPlayingView-coverArtContainer .cover-art::before{display:none!important;content:none!important}.Root__right-sidebar img,.main-nowPlayingView-coverArtContainer img{border-radius:50%!important;visibility:visible!important;opacity:1!important;display:block!important}.Root__now-playing-bar,.main-nowPlayingBar-container{border-radius:99px!important;overflow:hidden!important;margin:12px!important;width:calc(100% - 24px)!important;box-shadow:0 10px 30px rgba(0,0,0,.5)!important;z-index:9999!important;backdrop-filter:blur(8px)!important;-webkit-backdrop-filter:blur(8px)!important;background-color:rgba(255,255,255,.08)!important;border:1px solid rgba(255,255,255,.1)!important}footer.main-nowPlayingBar-nowPlayingBar{border-radius:99px!important}.main-nowPlayingBar-left *{box-shadow:none!important;-webkit-box-shadow:none!important;filter:none!important;-webkit-filter:none!important}.main-nowPlayingBar-left .main-coverSlot-container,.main-nowPlayingBar-left .main-coverSlot-expanded{box-shadow:none!important;background:0 0!important}.main-nowPlayingBar-left canvas{display:none!important}.main-nowPlayingBar-left canvas[class*=cover],.main-nowPlayingBar-left canvas[style*=transform]{display:block!important}.main-yourLibraryX-listItemImage,.main-yourLibraryX-listItemImage>div,.x-entityImage-imageContainer{border-radius:8px!important;-webkit-mask-image:none!important;mask-image:none!important;background-color:transparent!important;overflow:hidden!important}.main-yourLibraryX-listItemImage img,.x-entityImage-image{border-radius:8px!important;-webkit-mask-image:none!important;mask-image:none!important;border:none!important;width:100%!important;height:100%!important;aspect-ratio:1/1!important;object-fit:cover!important}[class*=rounded-full],[style*=\"border-radius: 50%\"]{border-radius:8px!important}.Root__main-view,.Root__nav-bar,.Root__right-sidebar,.os-host-overflow,.os-padding,div[data-testid=main-view-container]{border-radius:24px!important;overflow:hidden!important}.main-card-card,.main-cardImage-imageWrapper,.view-home-shortcut{border-radius:12px!important;overflow:hidden!important}:root{--spice-card:var(--spice-main-elevated)!important}",
-    "preview": "resources/assets/snippets/Pill-Player-Bar.png"
+    "título": "Reproductor de pastillas e interfaz de usuario redondeada",
+    "descripción": "Transforma al jugador en una píldora con efecto vítreo y esquinas redondeadas para los íconos de la biblioteca",
+    "código": ".Root__right-sidebar .cover-art,.main-nowPlayingView-coverArtContainer .cover-art,.main-nowPlayingView-coverArtContainer div[style*=background]{background:0 0!importante;radio fronterizo: ¡50%!importante;opacidad:1!importante}.Root__right-sidebar .cover-art::after,.Root__right-sidebar .cover-art::antes,.main-nowPlayingView-coverArtContainer .cover-art::después,.main-nowPlayingView-coverArtContainer .cover-art::antes{display:none!importante;contenido:¡ninguno!importante}.Root__right-sidebar img,.main-nowPlayingView-coverArtContenedor img{border-radius:50%!importante;visibilidad: ¡visible!importante;opacidad:1!importante;mostrar:¡bloquear!importante}.Root__now-playing-bar,.main-nowPlayingBar-container{border-radius:99px!importante;desbordamiento: ¡oculto!importante;margen:12px!importante;ancho:calc(100% - 24px)!importante;box-shadow:0 10px 30px rgba(0,0,0,.5)!importante;índice z:9999!importante;filtro de fondo: ¡desenfocar(8px)!importante;-webkit-backdrop-filter:blur(8px)!importante;color de fondo:rgba(255,255,255,.08)!importante;borde:1px sólido rgba(255,255,255,.1)!importante}footer.main-nowPlayingBar-nowPlayingBar{border-radius:99px!importante}.main-nowPlayingBar-left *{box-shadow:none!importante;-webkit-box-shadow:¡ninguno!importante;filtro:¡ninguno!importante;-webkit-filter:¡ninguno!importante}.main-nowPlayingBar-izquierda .main-coverSlot-container,.main-nowPlayingBar-izquierda .main-coverSlot-expanded{box-shadow:none!importante;fondo:0 0!importante}.main-nowPlayingBar-left canvas{pantalla:ninguna!importante}.main-nowPlayingBar-lienzo izquierdo[clase*=cover],.main-nowPlayingBar-lienzo izquierdo[estiloe*=transform]{display:block!importante}.main-yourLibraryX-listItemImage,.main-yourLibraryX-listItemImage>div,.x-entityImage-imageContainer{border-radius:8px!importante;-webkit-mask-image:¡ninguno!importante;mask-image:¡ninguno!importante;color de fondo: ¡transparente!importante;desbordamiento: ¡oculto!importante}.main-yourLibraryX-listItemImage img,.x-entityImage-image{border-radius:8px!importante;-webkit-mask-image:¡ninguno!importante;mask-image:¡ninguno!importante;frontera: ¡ninguna!importante;ancho:100%!importante;altura:100%!importante;aspecto-rataio:1/1!importante;ajuste-objeto:¡cubierta!importante}[clase*=redondeado-completo],[estilo*=\"radio-del-borde: 50%\"]{radio-del-borde:8px!importante}.Root__main-view,.Root__nav-bar,.Root__right-sidebar,.os-host-overflow,.os-padding,div[data-testid=main-view-container]{border-radius:24px!importante;desbordamiento: ¡oculto!importante}.main-card-card,.main-cardImage-imageWrapper,.view-home-shortcut{border-radius:12px!importante;desbordamiento: ¡oculto!importante}:root{--spice-card:var(--spice-main-elevated)!importante}",
+    "vista previa": "recursos/activos/fragmentos/Pill-Player-Bar.png"
   },
   {
-    "title": "Gigantic Now Playing View & Canvas",
-    "description": "Greatly increases the width of the Now Playing View panel beyond the default limit (feel free to change it to your liking) at the cost of losing the ability to drag-resize it and enhances it with a cleaner look by removing the dark gradient over the canvas loop video and moving a few elements further down.",
-    "code": ".NowPlayingView { border-radius: 8px !important; } [data-right-sidebar-hidden=false] .Root__right-sidebar, .npv-nowPlayingbar-container, .oXO9_yYs6JyOwkBn8E4a { width: 670px !important; } [data-right-sidebar-hidden=true] .Root__right-sidebar, .npv-nowPlayingbar-container { width: 0px !important; } .main-nowPlayingView-nowPlayingGrid:has(.canvasVideoContainerNPV video) { .main-nowPlayingView-contextItemInfo { margin-top: 30vh !important; } [aria-hidden=false] .HIaySI1OwWK1MLojie8y, .fetnShpUoCol51CFSqwn { margin-top: 26vh !important; margin-bottom: -31vh !important; } .canvasVideoContainerNPV { margin-top: -5vh !important; } .Of__Db4QgB9osz_mFxhw:before, .Of__Db4QgB9osz_mFxhw:after { background: transparent !important; } }",
-    "preview": "resources/assets/snippets/giga_npv_canvas.png"
+    "título": "Gigantic ahora reproduce View & Canvas",
+    "descripción": "Aumenta enormemente el ancho del panel Vista de reproducción actual más allá del límite predeterminado (siéntete libre de cambiarlo a tu gusto) a costa de perder la capacidad de arrastrarlo y redimensionarlo y lo mejora con un aspecto más limpio al eliminar el degradado oscuro sobre el video en bucle de lienzo y mover algunos elementos más abajo",
+    "código": ".NowPlayingView { radio de borde: 8px !importante; } [data-right-sidebar-hidden=false] .Root__right-sidebar, contenedor .npv-nowPlayingbar, .oXO9_yYs6JyOwkBn8E4a { ancho: 670px !importante; } [data-right-sidebar-hidden=true] .Root__right-sidebar, .npv-nowPlayingbar-container { ancho: 0px !importante; } .main-nowPlayingView-nowPlayingGrid:has(.canvasVideoContainerNPV video) { .main-nowPlayingView-contextItemInfo { margen superior: 30vh !importante; } [aria-hidden=false] .HIaySI1OwWK1MLojie8y, .fetnShpUoCol51CFSqwn { margin-top: ¡26vh!importante; margen inferior: -31vh !importante; } .canvasVideoContainerNPV { margen superior: -5vh !importante; } .Of__Db4QgB9osz_mFxhw:antes, .Of__Db4QgB9osz_mFxhw:después del fondo {: ¡transparente!importante; } }",
+    "vista previa": "recursos/activos/fragmentos/giga_npv_canvas.png"
   }
 ]
